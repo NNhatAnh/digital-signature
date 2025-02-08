@@ -140,7 +140,7 @@ public class DocumentService {
             Image signatureImage = Image.getInstance(signatureImageBytes);
             signatureImage.scaleToFit(200, 100);
 
-            String userID = String.valueOf(user.getID()); // Chuyển userID sang String để so sánh
+            String userID = String.valueOf(user.getID());
 
             for (int i = 1; i <= pdfReader.getNumberOfPages(); i++) {
                 PdfReaderContentParser parser = new PdfReaderContentParser(pdfReader);
@@ -151,9 +151,8 @@ public class DocumentService {
                 Matcher matcher = pattern.matcher(text);
 
                 while (matcher.find()) {
-                    String number = matcher.group(1); // Lấy số từ $<number>
+                    String number = matcher.group(1);
 
-                    // 🔥 Kiểm tra nếu số này trùng với userID thì mới tiếp tục
                     if (number.equals(userID)) {
                         float[] position = getTextPosition(pdfReader, i, "$<" + number);
                         if (position != null) {
