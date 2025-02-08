@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-DigitalSignatureApplication<digital_signature>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.digital_signature.DigitalSignatureApplication",
+            "projectName": "digital_signature",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

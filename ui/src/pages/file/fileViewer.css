@@ -1,0 +1,88 @@
+.file-viewer {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+.header button {
+  background-color: #f0ad4e;
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.header button:hover {
+  background-color: #ec971f;
+}
+
+.iframe-container {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 50px);
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.signature-preview,
+.signature-canvas {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 2000;
+}
+
+canvas {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  background-color: white;
+}
+
+.signature-preview img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  background-color: white;
+}
+
+.canvas-controls {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.signature-preview .btn {
+  display: flex;
+  flex-direction: row;
+}
+
+.btn .cancel_btn {
+  background-color: red;
+}

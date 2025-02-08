@@ -1,0 +1,51 @@
+.folder-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .file-upload-section {
+    margin-bottom: 30px;
+  }
+  
+  .file-upload-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .file-upload-section form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .files-list-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .files-list-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .files-list-section li {
+    margin-bottom: 10px;
+  }
+  
+  .files-list-section a {
+    text-decoration: none;
+    color: #007BFF;
+  }
+  
+  .files-list-section a:hover {
+    text-decoration: underline;
+  }
+  
